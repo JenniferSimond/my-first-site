@@ -1,25 +1,39 @@
+function random() { 
+    return Math.random() * (max - min) + min
+}
+
 class Blob {    
     constructor(el) {   
         this.el = el
-        this.size = el.getBoundingClientReact().width
-        this.x = 0
-        this.y = 0
-        this.volocityX = 1
-        this.volocityY = 1 
+        this.size = el.getBoundingClientRect().width
+        this.x = random(0, window.innerHeight - this.size)
+        this.y = random(0, window.innerHeight - this.size)
+        this.vx = 4
+        this.vy = 4
     }
 
     update() {  
-        this.x += this.volocityX
-        this.y += this.volocityY
+        this.x += this.vx
+        this.y += this.vy
 
         if (this.x >= window.innerWidth - this.size) {    
-            this.volocityX *= -1
+            this.vx *= -1
             this.x = window.innerWidth - this.size
         }
 
         if (this.y >= window.innerWidth - this.size) {
-            this.volocityY *= -1
+            this.vy *= -1
             this.y = window.innerWidth - this.size
+        }
+
+        if (this.x <= 0) {  
+            this.vx *= -1
+            this.x = 0
+        }
+
+        if (this.y <= 0) {  
+            this.vy *= -1
+            this.y = 0
         }
     }
 
