@@ -62,19 +62,6 @@
   
 }
 
-#rectangle {
-    z-index: 8; 
-    width: 255px;
-    height: 360px;
-    border-radius: 10%;
-    background: #004777;
-    margin: auto;
-    margin-top: 10px;
-    bottom: 470px;
-    right: 700px;
-    position: relative;
-    box-shadow: #040404;
-}
 
 #rectangle2 {
     z-index: 9; 
@@ -84,7 +71,7 @@
     background: #8D3B72;
     margin: auto;
 
-    bottom: 810px;
+    bottom: 430px;
     right: 675px;
     position: relative;
 }
@@ -94,12 +81,12 @@
   height: auto;
   border-radius: 10%;
   left: 180px;
-  top: 162px;
+  top: 160px;
   
  
 }
 span { 
-    color: #96ACB7;
+    color: #585d5f;
 }
 h1 {
   color: #8D3B72;
@@ -121,3 +108,5 @@ p {
   
 
 }
+
+
