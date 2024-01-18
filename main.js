@@ -8,8 +8,8 @@ class Blob {
         this.size = el.getBoundingClientRect().width;
         this.x = random(0, window.innerWidth - this.size);
         this.y = random(0, window.innerHeight - this.size);
-        this.vx = random(2, 2.5) * (Math.random() > 0.5 ? -1 : 1);
-        this.vy = random(2, 2.5) * (Math.random() > 0.5 ? -1 : 1);
+        this.vx = random(2, 2.6) * (Math.random() > 0.5 ? -1 : 1);
+        this.vy = random(2, 2.6) * (Math.random() > 0.5 ? -1 : 1);
     }
 
     update() {  

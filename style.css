@@ -63,18 +63,6 @@
 }
 
 
-#rectangle2 {
-    z-index: 9; 
-    width: 255px;
-    height: 360px;
-    border-radius: 10%;
-    background: #8D3B72;
-    margin: auto;
-
-    bottom: 430px;
-    right: 675px;
-    position: relative;
-}
 
 .profile-photo {
   width: 250px;
@@ -82,6 +70,7 @@
   border-radius: 10%;
   left: 180px;
   top: 160px;
+  box-shadow: -14px -14px #8D3B72;
   
  
 }
